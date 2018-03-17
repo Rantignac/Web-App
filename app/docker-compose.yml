@@ -1,0 +1,8 @@
+version: '3'
+services:
+  web:
+    image: rantignac/app:1.0
+    restart: always
+    container_name: app
+    ports:
+      - 8000:8000
