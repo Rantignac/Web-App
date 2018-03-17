@@ -1,0 +1,43 @@
+{{define "header"}}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="//cdn.muicss.com/mui-0.9.38/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="//cdn.muicss.com/mui-0.9.38/js/mui.min.js"></script>
+    <title>Formulaire</title>
+</head>
+<div class="container">
+
+        <img class="go" src="https://newrelic.com/assets/pages/golang/go-mascot.svg" height="100px" />
+        
+        <div>
+              
+<style>
+    .container {
+  background: #69d7e2;
+  margin: 0 auto;
+}
+
+.go {
+  bottom: 0;
+  transform-origin: 50% 500%;
+  animation: go-animate 2s linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes go-animate {
+  0% {
+    transform: translateX(0) rotate(20deg);
+  }
+  50% {
+    transform: translateX(300px) rotate(-20deg);
+  }
+  100% {
+    transform: translateX(0) rotate(20deg);
+  }
+}
+
+</style>
+{{end}}
